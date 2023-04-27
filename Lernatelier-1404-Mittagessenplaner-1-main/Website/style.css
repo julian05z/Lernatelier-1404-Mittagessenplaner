@@ -1,0 +1,152 @@
+*:not(button, input) {
+    color: 	lightpink;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  }
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-areas:
+      "navigator navigator navigator"
+      "main main main"
+      "footer footer footer";
+}
+
+li {
+    list-style-type: none;
+  }
+
+header {
+    padding: 2rem 1rem;
+    grid-area: header;
+    background-color: black;
+}
+
+nav {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+    min-height: 25vh;
+    background-color: black ;
+    grid-area: navigator;
+    width: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    list-style: none;
+    background-color: rgb(42, 75, 75);
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-top: 2.5rem;
+  }
+
+  .nav-list:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(37, 37, 37);
+    transition: transform 150ms;
+    transform: scale(1.1);
+  }
+
+
+  main {
+    grid-area: main;
+    background-color:  rgb(53, 86, 86);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    list-style: none;
+    color: lightpink;
+    background-color: black;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-top: 2.5rem;
+  }
+
+  .list-btn {
+    
+      border: 1px solid black;
+    
+    
+      padding: 10px;
+    
+  }
+  .mainu{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+  }
+
+
+  .main-list:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(37, 37, 37);
+    transition: transform 150ms;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+  }
+  
+
+  td {
+    width: 50px;
+    border: 2px solid gray;
+  }
+
+  .has-entry 
+  {
+     opacity: 0; 
+  }
+
+
+  .kalenderButton {
+
+    background-color: #4CAF50; /* Hintergrundfarbe */
+    border: none; /* Kein Rahmen */
+    color: white; /* Schriftfarbe */
+    padding: 10px 20px; /* Abstand zwischen Inhalt und Rand */
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
