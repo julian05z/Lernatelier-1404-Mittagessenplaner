@@ -47,13 +47,12 @@ function handleLogin(e) {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log("Server response:", data);
+      console.log("Antwort", data);
+
       if (data.success) {
-        // Login erfolgreich
         alert("Erfolgreich eingeloggt!");
         location.href = "#kalender";
       } else {
-        // Login fehlgeschlagen
         alert("Benutzername oder Passwort falsch.");
         location.href = "#kalender";
       }
@@ -64,95 +63,14 @@ function handleLogin(e) {
 }
 
 
-
-
-
-
-
-
-// function handleLogin(e) {
-//   e.preventDefault();
-  
-//   const dataPe = {
-//     "benutzername": e.target[0].value,
-//     "name": e.target[1].value,
-//   };
   
 //   fetch("http://127.0.0.1:3000/data/", {
     
    
 
 //   })
-//     .then((res) => res.json())
-//     .then((data) => {
-//       if (data.success) {
-//         // Login erfolgreich
-//         alert("Erfolgreich eingeloggt!");
-//         location.href = "kalender";
-//       } else {
-//         // Login fehlgeschlagen
-//         alert("Benutzername oder Passwort falsch.");
-//         location.href = "#kalender";
-//       }
-//     })
-//     .catch((error) => {
-//       console.error("Fehler beim Login:", error);
-//     });
-// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function handleLogin(e) {
-//   e.preventDefault();
-//   const dataPe = {
-//     "benutzername": e.target[0].value,
-//     "passwort": e.target[1].value,
-//   };
-//   fetch("http://localhost:3000/data/", {
-//    method: "POST",
-//    crossDomain: true,
-   
-//    Accept: "application/json",
-//    "Access-Control-Allow-Origin": "*",
-
-// body: JSON.stringify(dataPe)
-//   })
-  
-//     .then((res) => res.json())
-//     .then((data) => {
 //       console.log(data);
 //       if (data.passwort == dataPe.passwort) {
 //         alert("Success");
@@ -160,18 +78,13 @@ function handleLogin(e) {
 //         location.hash = "kalender";
 //       } else {
         
-//         console.log("arschloch es gaht nöd");
+//         console.log("mano es gaht nöd");
         
         
 //         document.querySelector(".loginPage")
 //       }
 //     });
 // }
-
-
-
- 
-
 
 
   function clearElement(element) {
